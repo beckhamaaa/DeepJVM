@@ -3,7 +3,7 @@ package com.torres.jvm.chapter1;
 /**
  * Created by Torres on 2018-06-13 18:24.
  */
-public class a11 {
+public class ParamSetting {
 
 //    #语言选项，这个必须设置，否则编译好后会出现一个HashTable的NPE错
 //    export LANG=C

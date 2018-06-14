@@ -12,10 +12,10 @@ public class AtomicTest1 {
      */
     public final int incrementAndGet() {
         for (;;) {
-            int current = get();
-            int next = current + 1;
-            if (compareAndSet(current, next))
-                return next;
+//            int current = get();
+//            int next = current + 1;
+//            if (compareAndSet(current, next))
+//                return next;
         }
     }
 

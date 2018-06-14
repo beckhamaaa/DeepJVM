@@ -19,13 +19,13 @@ import java.lang.reflect.UndeclaredThrowableException;
         private static Method m2;
 
         public $Proxy0(InvocationHandler paramInvocationHandler)
-                throws
+//                throws
         {
             super(paramInvocationHandler);
         }
 
         public final void sayHello()
-                throws
+//                throws
         {
             try
             {
@@ -53,7 +53,7 @@ import java.lang.reflect.UndeclaredThrowableException;
                 m1 = Class.forName("java.lang.Object").getMethod("equals", new Class[] { Class.forName("java.lang.Object") });
                 m0 = Class.forName("java.lang.Object").getMethod("hashCode", new Class[0]);
                 m2 = Class.forName("java.lang.Object").getMethod("toString", new Class[0]);
-                return;
+//                return;
             }
             catch (NoSuchMethodException localNoSuchMethodException)
             {

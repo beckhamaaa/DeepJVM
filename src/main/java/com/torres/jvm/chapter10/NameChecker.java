@@ -4,11 +4,7 @@ import javax.annotation.processing.Messager;
 import javax.annotation.processing.ProcessingEnvironment;
 import javax.lang.model.element.*;
 import javax.lang.model.util.ElementScanner6;
-import java.util.EnumSet;
 
-import static java.lang.reflect.Modifier.FINAL;
-import static java.lang.reflect.Modifier.PUBLIC;
-import static java.lang.reflect.Modifier.STATIC;
 import static javax.lang.model.element.ElementKind.*;
 import static javax.tools.Diagnostic.Kind.WARNING;
 
@@ -94,8 +90,8 @@ public class NameChecker {
         private boolean heuristicallyConstant(VariableElement e) {
             if (e.getEnclosingElement().getKind() == INTERFACE)
                 return true;
-            else if (e.getKind() == FIELD && e.getModifiers().containsAll(EnumSet.of(PUBLIC, STATIC, FINAL)))
-                return true;
+//            else if (e.getKind() == FIELD && e.getModifiers().containsAll(EnumSet.of(PUBLIC, STATIC, FINAL)))
+//                return true;
             else {
                 return false;
             }
